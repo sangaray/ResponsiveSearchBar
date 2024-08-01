@@ -44,6 +44,11 @@ body {
 	color: #dedddd;
 }
 
+.search__mic:hover,
+.search__search:hover {
+	transform: rotate(-90deg);
+}
+
 .search__input::placeholder {
 	color: #dedddd;
 }
