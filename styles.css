@@ -21,7 +21,7 @@ body {
 	border: 1px solid #dedddd;
 	border-radius: 20px;
 	padding: 5px;
-	width: 80%;
+	width: 70%;
 	margin: 25px;
 }
 
@@ -48,8 +48,21 @@ body {
 	color: #dedddd;
 }
 
+.search__input::placeholder:focus {
+	background-color: transparent;
+}
+
+.search__input:-webkit-autofill {
+	-webkit-box-shadow: 0 0 0 30px #0b0b2c inset !important;
+	-webkit-text-fill-color: #dedddd !important; /* Cambia este color según tus necesidades */
+}
+
 .search__input:-webkit-autofill:focus {
-	-webkit-box-shadow: 0 0 0 30px transparent inset !important;
+	-webkit-box-shadow: 0 0 0 30px #0b0b2c inset !important;
 	-webkit-text-fill-color: #dedddd !important;
 	transition: background-color 5000s ease-in-out 0s;
+}
+
+.search__input:focus::placeholder {
+	color: #dedddd; /* Cambia este color según tus necesidades */
 }
