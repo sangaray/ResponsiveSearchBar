@@ -7,3 +7,49 @@ div {
 	margin: 0;
 	padding: 0;
 }
+
+body {
+	font-family: sans-serif;
+	display: flex;
+	justify-content: center;
+	background-color: #0b0b2c;
+}
+
+.search__container {
+	display: flex;
+	align-items: center;
+	border: 1px solid #dedddd;
+	border-radius: 20px;
+	padding: 5px;
+	width: 80%;
+	margin: 25px;
+}
+
+.search__input {
+	border: none;
+	outline: none;
+	padding: 10px;
+	border-radius: 20px 0 0 20px;
+	flex-grow: 1;
+	background-color: transparent;
+	color: #dedddd;
+}
+
+.search__mic,
+.search__search {
+	background: none;
+	border: none;
+	padding: 5px;
+	cursor: pointer;
+	color: #dedddd;
+}
+
+.search__input::placeholder {
+	color: #dedddd;
+}
+
+.search__input:-webkit-autofill:focus {
+	-webkit-box-shadow: 0 0 0 30px transparent inset !important;
+	-webkit-text-fill-color: #dedddd !important;
+	transition: background-color 5000s ease-in-out 0s;
+}
